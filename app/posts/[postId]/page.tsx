@@ -1,22 +1,32 @@
-import { GetPostData, getSortedPostsData } from '@/lib/posts'
+import { getPostsMeta, getPostByName } from '@/lib/posts'
 import React from 'react'
 import { notFound } from 'next/navigation'
 import getFormattedDate from '@/lib/getFormmatedDate'
 import Link from 'next/link'
 
-// creates SSG components instead if SSR when building
-export function generateStaticParams() {
-	const posts = getSortedPostsData() //automatically de-duped
+export const revalidate = 0 //sets cache to 0, change after development
 
-	return posts.map((post) => ({
-		postId: post.id
-	}))
+type Props = {
+	params: {
+		postId: string
+	}
 }
 
-export function generateMetadata({ params }: { params: { postId: string } }) {
-	const posts = getSortedPostsData() //automatically de-duped
-	const { postId } = params
-	const post = posts.find((post) => post.id === postId)
+// creates SSG components instead if SSR when building
+// export async function generateStaticParams() {
+// 	const posts = await getPostsMeta()
+
+// 	if (!posts) {
+// 		return []
+// 	}
+
+// 	return posts.map((post) => ({
+// 		postId: post.id
+// 	}))
+// }
+
+export async function generateMetadata({ params: { postId } }: Props) {
+	const post = await getPostByName(`${postId}.mdx`) //automatically de-duped
 
 	if (!post) {
 		return {
@@ -25,33 +35,37 @@ export function generateMetadata({ params }: { params: { postId: string } }) {
 	}
 
 	return {
-		title: post.title
+		title: post.meta.title
 	}
 }
 
-export default async function Post({ params }: { params: { postId: string } }) {
-	const posts = getSortedPostsData() //automatically de-duped
-	const { postId } = params
+export default async function Post({ params: { postId } }: Props) {
+	const post = await getPostByName(`${postId}.mdx`) //automatically de-duped
 
-	// returns 404 page if the id's dont match
-	if (!posts.find((post) => post.id === postId)) {
-		notFound()
-	}
+	if (!post) notFound()
 
-	const { title, date, contentHtml } = await GetPostData(postId)
-	const publishDate = getFormattedDate(date)
+	const { meta, content } = post
+
+	const publishDate = getFormattedDate(meta.date)
+
+	const tags = meta.tags.map((tag, i) => (
+		<Link key={i} href={`/tags/${tag}`}>
+			{tag}
+		</Link>
+	))
 
 	return (
-		<main className="px-6 prose prose-xl prose-slate dark:prose-invert mx-auto">
-			<h1 className="text-3xl mt-4 mb-0">{title}</h1>
-			<p className="mt-0">{publishDate}</p>
-			<article>
-				{/* dangerouslySetInnerHTML is simillar to DOM.innerHTML, use this instead of creating a selector to grab the element */}
-				<section dangerouslySetInnerHTML={{ __html: contentHtml }} />
-				<p>
-					<Link href="/">Back to Homepage</Link>
-				</p>
-			</article>
-		</main>
+		<>
+			<h2 className="text-3xl mt-4 mb-0">{meta.title}</h2>
+			<p className="mt-0 text-sm">{publishDate}</p>
+			<article>{content}</article>
+			<section>
+				<h3>Related: </h3>
+				<div className="flex flex-row gap-4">{tags}</div>
+			</section>
+			<p className="mb-10">
+				<Link href="/">Back to Home</Link>
+			</p>
+		</>
 	)
 }
