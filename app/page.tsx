@@ -4,7 +4,7 @@ import MyProfilePic from './components/MyProfilePic'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const revalidate = 10
+export const revalidate = 86400
 
 export default function Home() {
 	return (

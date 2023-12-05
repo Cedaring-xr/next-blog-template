@@ -3,8 +3,9 @@ import React from 'react'
 import { notFound } from 'next/navigation'
 import getFormattedDate from '@/lib/getFormmatedDate'
 import Link from 'next/link'
+import 'highlight.js/styles/github-dark.css'
 
-export const revalidate = 0 //sets cache to 0, change after development
+export const revalidate = 86400 //sets cache to 0, change after development
 
 type Props = {
 	params: {
@@ -13,17 +14,17 @@ type Props = {
 }
 
 // creates SSG components instead if SSR when building
-// export async function generateStaticParams() {
-// 	const posts = await getPostsMeta()
+export async function generateStaticParams() {
+	const posts = await getPostsMeta()
 
-// 	if (!posts) {
-// 		return []
-// 	}
+	if (!posts) {
+		return []
+	}
 
-// 	return posts.map((post) => ({
-// 		postId: post.id
-// 	}))
-// }
+	return posts.map((post) => ({
+		postId: post.id
+	}))
+}
 
 export async function generateMetadata({ params: { postId } }: Props) {
 	const post = await getPostByName(`${postId}.mdx`) //automatically de-duped
