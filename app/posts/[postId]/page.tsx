@@ -55,17 +55,20 @@ export default async function Post({ params: { postId } }: Props) {
 		</Link>
 	))
 
+	const readTime = meta.readTime
+
 	return (
 		<>
-			<h2 className="text-3xl mt-4 mb-0">{meta.title}</h2>
-			<p className="mt-0 text-sm">{publishDate}</p>
+			<h2 className="text-3xl mt-10 mb-0">{meta.title}</h2>
+			<p className="mt-0 text-sm mb-0">{publishDate}</p>
+			<p className="mt-0 text-sm">Estimated Read time: {readTime}</p>
 			<article>{content}</article>
 			<section>
 				<h3>Related: </h3>
 				<div className="flex flex-row gap-4">{tags}</div>
 			</section>
 			<p className="mb-10">
-				<Link href="/">Back to Home</Link>
+				<Link href="/">Return to Homepage</Link>
 			</p>
 		</>
 	)

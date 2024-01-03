@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Merriweather:wght@300;400;700&family=PT+Sans:wght@400;700&family=Rubik:wght@300;400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.header-gradient {
+		background: rgb(66, 76, 87);
+		background: linear-gradient(0deg, rgba(66, 76, 87, 1) 0%, rgba(44, 54, 54, 1) 76%);
+	}
+
+	.polygon {
+		width: 300px;
+		height: 200px;
+		-webkit-clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 90%);
+		clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 90%);
+		border-radius: 20px;
+		border-top-left-radius: 230px 55px;
+		border-bottom-left-radius: 110px 35px;
+	}
+	.polygon-large {
+		width: 500px;
+		height: 350px;
+		-webkit-clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 90%);
+		clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 90%);
+		border-radius: 20px;
+		border-top-left-radius: 470px 90px;
+		border-bottom-left-radius: 210px 50px;
+	}
+
+	.sunBackground {
+		background-image: url('/images/laptopWide.png');
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+
+	.serif-font {
+		font-family: 'Merriweather', serif;
+	}
+	.sans-font {
+		font-family: 'Rubik', sans-serif;
+	}
+}

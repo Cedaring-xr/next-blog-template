@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>http://localhost:3000</loc><lastmod>2023-12-03T02:19:39.669Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/tags/next.js</loc><lastmod>2023-12-03T02:19:39.670Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/tags/nextjs</loc><lastmod>2023-12-03T02:19:39.670Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/posts/pre-rendering</loc><lastmod>2023-12-03T02:19:39.670Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/posts/new</loc><lastmod>2023-12-03T02:19:39.670Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/posts/ssg-ssr</loc><lastmod>2023-12-03T02:19:39.670Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000</loc><lastmod>2023-12-05T17:12:35.175Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/tags/next.js</loc><lastmod>2023-12-05T17:12:35.176Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/tags/nextjs</loc><lastmod>2023-12-05T17:12:35.176Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/tags/AWS Lambda</loc><lastmod>2023-12-05T17:12:35.176Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/tags/serverless</loc><lastmod>2023-12-05T17:12:35.176Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/tags/Python</loc><lastmod>2023-12-05T17:12:35.176Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/tags/Cypress.io</loc><lastmod>2023-12-05T17:12:35.176Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/tags/Playwright</loc><lastmod>2023-12-05T17:12:35.176Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/tags/Testing</loc><lastmod>2023-12-05T17:12:35.176Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/tags/Automation</loc><lastmod>2023-12-05T17:12:35.176Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/posts/pre-rendering</loc><lastmod>2023-12-05T17:12:35.176Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/posts/new</loc><lastmod>2023-12-05T17:12:35.176Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/posts/Lambda-Layers</loc><lastmod>2023-12-05T17:12:35.176Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/posts/Cypress-vs-Playwright</loc><lastmod>2023-12-05T17:12:35.176Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

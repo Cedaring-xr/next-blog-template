@@ -3,6 +3,7 @@ type Meta = {
 	title: string
 	date: string
 	tags: string[]
+	readTime: string
 }
 
 type BlogPost = {
