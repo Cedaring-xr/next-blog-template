@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://next-blog-template-kappa.vercel.app</loc><lastmod>2024-01-10T21:38:08.012Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://next-blog-template-kappa.vercel.app/posts/Amplify-hosting-options</loc><lastmod>2024-01-10T21:38:08.012Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://next-blog-template-kappa.vercel.app/posts/Lambda-Layers</loc><lastmod>2024-01-10T21:38:08.012Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://next-blog-template-kappa.vercel.app/posts/Cypress-vs-Playwright</loc><lastmod>2024-01-10T21:38:08.012Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://next-blog-template-kappa.vercel.app/tags/AWS</loc><lastmod>2024-01-10T21:38:08.012Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://next-blog-template-kappa.vercel.app/tags/Amplify</loc><lastmod>2024-01-10T21:38:08.012Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://next-blog-template-kappa.vercel.app/tags/Cloud Architecture</loc><lastmod>2024-01-10T21:38:08.012Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://next-blog-template-kappa.vercel.app/tags/AWS Lambda</loc><lastmod>2024-01-10T21:38:08.012Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://next-blog-template-kappa.vercel.app/tags/serverless</loc><lastmod>2024-01-10T21:38:08.012Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://next-blog-template-kappa.vercel.app/tags/Python</loc><lastmod>2024-01-10T21:38:08.012Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://next-blog-template-kappa.vercel.app/tags/Cypress</loc><lastmod>2024-01-10T21:38:08.013Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://next-blog-template-kappa.vercel.app/tags/Playwright</loc><lastmod>2024-01-10T21:38:08.013Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://next-blog-template-kappa.vercel.app/tags/Testing</loc><lastmod>2024-01-10T21:38:08.013Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://next-blog-template-kappa.vercel.app/tags/Automation</loc><lastmod>2024-01-10T21:38:08.013Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://next-blog-template-kappa.vercel.app</loc><lastmod>2024-01-22T19:53:03.839Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://next-blog-template-kappa.vercel.app/posts/Amplify-hosting-options</loc><lastmod>2024-01-22T19:53:03.840Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://next-blog-template-kappa.vercel.app/posts/Lambda-Layers</loc><lastmod>2024-01-22T19:53:03.840Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://next-blog-template-kappa.vercel.app/posts/Cypress-vs-Playwright</loc><lastmod>2024-01-22T19:53:03.840Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://next-blog-template-kappa.vercel.app/tags/AWS</loc><lastmod>2024-01-22T19:53:03.840Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://next-blog-template-kappa.vercel.app/tags/Amplify</loc><lastmod>2024-01-22T19:53:03.840Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://next-blog-template-kappa.vercel.app/tags/Cloud Architecture</loc><lastmod>2024-01-22T19:53:03.840Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://next-blog-template-kappa.vercel.app/tags/AWS Lambda</loc><lastmod>2024-01-22T19:53:03.840Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://next-blog-template-kappa.vercel.app/tags/serverless</loc><lastmod>2024-01-22T19:53:03.840Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://next-blog-template-kappa.vercel.app/tags/Python</loc><lastmod>2024-01-22T19:53:03.840Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://next-blog-template-kappa.vercel.app/tags/Cypress</loc><lastmod>2024-01-22T19:53:03.840Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://next-blog-template-kappa.vercel.app/tags/Playwright</loc><lastmod>2024-01-22T19:53:03.840Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://next-blog-template-kappa.vercel.app/tags/Testing</loc><lastmod>2024-01-22T19:53:03.840Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://next-blog-template-kappa.vercel.app/tags/Automation</loc><lastmod>2024-01-22T19:53:03.840Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
