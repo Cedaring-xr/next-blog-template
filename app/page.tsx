@@ -12,9 +12,9 @@ export default function Home() {
 				</div>
 				<div className="lg:w-1/2">
 					<p className="mt-12 mb-12 text-3xl text-center dark:text-white">
-						<span className="">
-							I am a web developer and QA automation engineer. I write about working with features of AWS
-							and some testing frameworks and methodologies.
+						<span>
+							I am a web developer and QA automation engineer. I write about various topics related to web
+							development, improving websites, testing, and working with features of AWS.
 						</span>
 					</p>
 				</div>
