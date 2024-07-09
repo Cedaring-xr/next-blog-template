@@ -11,11 +11,10 @@ export default function Home() {
 					<MyProfilePic />
 				</div>
 				<div className="lg:w-1/2">
-					<p className="mt-12 mb-12 text-3xl text-center dark:text-white">
-						<span>
-							I am a web developer and QA automation engineer. I write about various topics related to web
-							development, improving websites, testing, and working with features of AWS.
-						</span>
+					<p className="mt-12 mb-12 text-2xl text-center dark:text-white">
+						This is a blog for Radiant Pine LLC. I am a web developer and QA automation engineer that is
+						expanding into doing freelance work. I write about various topics related to web development,
+						improving websites, testing, and working with CMS platforms.
 					</p>
 				</div>
 			</div>
