@@ -4,8 +4,8 @@ import './globals.css'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-	title: 'Matt Ray Blog',
-	description: 'Created by Matt Ray'
+	title: 'Radiant Pine Blog',
+	description: 'Radiant Pine development blog posts and updates'
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

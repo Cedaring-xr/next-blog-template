@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaLaptop, FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaLaptop, FaGithub, FaCode } from 'react-icons/fa'
 import Link from 'next/dist/client/link'
 
 const Footer = () => {
@@ -10,11 +10,11 @@ const Footer = () => {
 				<Link href="https://github.com/Cedaring-xr" target="_blank">
 					<FaGithub className="text-purple-400 cursor-pointer" />
 				</Link>
-				<Link href="https://mattraydev.com" target="_blank">
+				<Link href="https://www.radiantpine.com" target="_blank">
 					<FaLaptop className="text-amber-400 cursor-pointer" />
 				</Link>
-				<Link href="https://twitter.com/CedaringXR" target="_blank">
-					<FaTwitter className="text-teal-400 cursor-pointer" />
+				<Link href="https://mattraydev.com" target="_blank">
+					<FaCode className="text-teal-400 cursor-pointer" />
 				</Link>
 			</span>
 		</div>
