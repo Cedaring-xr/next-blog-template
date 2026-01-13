@@ -1,14 +1,44 @@
-import React from 'react'
+'use client'
+
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Searchbar from './Searchbar'
 import Image from 'next/image'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import { FaSearch } from 'react-icons/fa'
 
 type Props = {}
 
 export default function Navbar({}: Props) {
+	const router = useRouter()
+	const pathname = usePathname()
+	const searchParams = useSearchParams()
+	const urlSearchQuery = searchParams.get('search') || ''
+	const [inputValue, setInputValue] = useState(urlSearchQuery)
+
+	// Sync input with URL when URL changes (e.g., browser back/forward)
+	useEffect(() => {
+		setInputValue(urlSearchQuery)
+	}, [urlSearchQuery])
+
+	const handleSearch = (value: string) => {
+		setInputValue(value)
+		const params = new URLSearchParams(searchParams)
+		if (value) {
+			params.set('search', value)
+		} else {
+			params.delete('search')
+		}
+		router.replace(`${pathname}?${params.toString()}`)
+	}
+
+	const handleClearInput = () => {
+		setInputValue('')
+		// Don't update URL params - keep search results
+	}
+
 	return (
 		<nav className="header-gradient p-2 sticky top-0 drop-shadow-xl z-10 sans-font">
-			<div className="md:px-6 prose prose-xl mx-auto flex justify-between flex-col sm:flex-row">
+			<div className="md:px-6 prose prose-xl mx-auto flex justify-between flex-col sm:flex-row items-center gap-4">
 				<Image
 					src="/images/RadiantPineLogo1.png"
 					alt="LLC logo"
@@ -24,8 +54,22 @@ export default function Navbar({}: Props) {
 						<br></br> Development Blog
 					</Link>
 				</h1>
-				<div className="flex flex-row text-white justify-center items-center gap-2 text-3xl">
-					<Searchbar />
+
+				<div className="relative h-[50px] w-full sm:w-[300px]">
+					<input
+						type="text"
+						placeholder="Search by title or date..."
+						value={inputValue}
+						onChange={(e) => handleSearch(e.target.value)}
+						className="border-2 border-black rounded-lg text-xl pl-4 pr-14 py-2 outline-none text-black w-full h-[50px]"
+					/>
+					<button
+						onClick={handleClearInput}
+						className="absolute right-0 top-0 bg-slate-800 h-[50px] w-[50px] flex items-center justify-center rounded-r-lg border-2 border-l-0 border-black cursor-pointer hover:bg-slate-700 active:scale-95 transition-all duration-150 ease-in-out"
+						aria-label="Clear search input"
+					>
+						<FaSearch className="text-xl text-white" />
+					</button>
 				</div>
 			</div>
 		</nav>
