@@ -22,7 +22,7 @@ export default function Navbar({}: Props) {
 
 	const handleSearch = (value: string) => {
 		setInputValue(value)
-		const params = new URLSearchParams(searchParams)
+		const params = new URLSearchParams(searchParams.toString())
 		if (value) {
 			params.set('search', value)
 		} else {
