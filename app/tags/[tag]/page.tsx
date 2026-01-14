@@ -2,7 +2,7 @@ import { getPostsMeta } from '@/lib/posts'
 import ListItem from '@/app/components/ListItem'
 import Link from 'next/link'
 
-export const revalidate = 86400 //once per day
+export const dynamic = 'force-dynamic'
 
 type Props = {
 	params: {

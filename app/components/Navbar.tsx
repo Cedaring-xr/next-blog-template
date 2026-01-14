@@ -55,20 +55,20 @@ export default function Navbar({}: Props) {
 					</Link>
 				</h1>
 
-				<div className="relative h-[50px] w-full sm:w-[300px]">
+				<div className="relative h-[38px] w-full sm:w-[300px]">
 					<input
 						type="text"
 						placeholder="Search by title or date..."
 						value={inputValue}
 						onChange={(e) => handleSearch(e.target.value)}
-						className="border-2 border-black rounded-lg text-xl pl-4 pr-14 py-2 outline-none text-black w-full h-[50px]"
+						className="border-2 border-black rounded-lg text-base pl-3 pr-12 py-1 outline-none text-black w-full h-[38px]"
 					/>
 					<button
 						onClick={handleClearInput}
-						className="absolute right-0 top-0 bg-slate-800 h-[50px] w-[50px] flex items-center justify-center rounded-r-lg border-2 border-l-0 border-black cursor-pointer hover:bg-slate-700 active:scale-95 transition-all duration-150 ease-in-out"
+						className="absolute right-0 top-0 bg-slate-800 h-[38px] w-[38px] flex items-center justify-center rounded-r-lg border-2 border-l-0 border-black cursor-pointer hover:bg-slate-700 active:scale-95 transition-all duration-150 ease-in-out"
 						aria-label="Clear search input"
 					>
-						<FaSearch className="text-xl text-white" />
+						<FaSearch className="text-base text-white" />
 					</button>
 				</div>
 			</div>

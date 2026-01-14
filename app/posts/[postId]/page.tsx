@@ -5,7 +5,7 @@ import getFormattedDate from '@/lib/getFormmatedDate'
 import Link from 'next/link'
 import 'highlight.js/styles/github-dark.css'
 
-export const revalidate = 86400 //sets cache to 0, change after development
+export const dynamic = 'force-dynamic'
 
 type Props = {
 	params: {

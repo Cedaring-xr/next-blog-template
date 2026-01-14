@@ -1,7 +1,7 @@
 import { getPostsMeta } from '@/lib/posts'
 import HomePageWrapper from './components/HomePageWrapper'
 
-export const revalidate = 86400
+export const dynamic = 'force-dynamic'
 
 export default async function Home() {
 	const posts = await getPostsMeta()
