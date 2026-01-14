@@ -48,7 +48,7 @@ export async function getPostByName(fileName: string): Promise<BlogPost | undefi
 			parseFrontmatter: true,
 			mdxOptions: {
 				rehypePlugins: [
-					rehypeHighlight,
+					rehypeHighlight as any,
 					rehypeSlug,
 					[
 						rehypeAutolinkHeadings,
