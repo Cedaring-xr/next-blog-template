@@ -5,7 +5,7 @@ import getFormattedDate from '@/lib/getFormmatedDate'
 import Link from 'next/link'
 import 'highlight.js/styles/github-dark.css'
 
-export const dynamic = 'force-dynamic'
+export const revalidate = 60 // Revalidate every hour
 
 type Props = {
 	params: {
