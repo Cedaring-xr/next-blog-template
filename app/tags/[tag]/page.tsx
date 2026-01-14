@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { getPostsMeta } from '@/lib/posts'
 import ListItem from '@/app/components/ListItem'
 import Link from 'next/link'

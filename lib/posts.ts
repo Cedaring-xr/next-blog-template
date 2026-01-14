@@ -14,7 +14,6 @@ type Filetree = {
 }
 
 export async function getPostByName(fileName: string): Promise<BlogPost | undefined> {
-	console.log('Fetching post:', fileName)
 	const res = await fetch(`https://raw.githubusercontent.com/cedaring-xr/blog-content-templates/main/${fileName}`, {
 		headers: {
 			Accept: 'application/vnd.github+json',
@@ -23,15 +22,9 @@ export async function getPostByName(fileName: string): Promise<BlogPost | undefi
 		}
 	})
 
-	if (!res.ok) {
-		console.error('Failed to fetch post:', fileName, 'Status:', res.status)
-		return undefined
-	}
+	if (!res.ok) return undefined
 	const rawMDX = await res.text()
-	if (rawMDX === '404: Not Found') {
-		console.error('Post not found:', fileName)
-		return undefined
-	}
+	if (rawMDX === '404: Not Found') return undefined
 
 	const { frontmatter, content } = await compileMDX<{
 		title: string
@@ -73,7 +66,6 @@ export async function getPostByName(fileName: string): Promise<BlogPost | undefi
 		content
 	}
 
-	console.log('blogpost item', blogPostObj)
 	return blogPostObj
 }
 

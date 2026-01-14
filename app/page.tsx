@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { getPostsMeta } from '@/lib/posts'
 import HomePageWrapper from './components/HomePageWrapper'
 
@@ -10,5 +11,9 @@ export default async function Home() {
 		return <p className="mt-10 text-center">Sorry, no posts available.</p>
 	}
 
-	return <HomePageWrapper posts={posts} />
+	return (
+		<Suspense fallback={<div className="mt-10 text-center">Loading...</div>}>
+			<HomePageWrapper posts={posts} />
+		</Suspense>
+	)
 }
