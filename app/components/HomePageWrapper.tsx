@@ -24,7 +24,7 @@ export default function HomePageWrapper({ posts }: Props) {
 					<p className="mt-12 mb-12 text-2xl text-center dark:text-white">
 						This is a blog for Radiant Pine LLC. I am a web developer and QA automation engineer that is
 						expanding into doing freelance work. I write about various topics related to web development,
-						improving websites, testing, and working with CMS platforms.
+						improving websites, and testing.
 					</p>
 				</div>
 			</div>
